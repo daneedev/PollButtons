@@ -1,14 +1,15 @@
 const { Command, CommandType } = require('gcommands');
 const Discord = require('discord.js')
+const ms = require('ms')
 
 new Command({
-	name: 'help',
-	description: 'Show all commands',
+	name: 'bot',
+	description: 'Show bot info',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: (ctx) => {
         const embed = new Discord.MessageEmbed
-        embed.setTitle('Help')
-        embed.setDescription('/poll - Create poll\n/ping - Show bot ping\n/bot - Show bot info\n')
+        embed.setTitle('About Bot')
+        embed.setDescription(`**🔄 Last Restart**: ${ms(ctx.client.uptime, { long: true})} ago\n**💨 Version**: beta-1.0.0\n**👨‍💻 Developer**: DaneeSkripter`)
         embed.setColor('#AE0131')
         ctx.reply({ embeds: [embed]})
 	}
