@@ -8,8 +8,8 @@ new Command({
 	run: (ctx) => {
         const embed = new Discord.MessageEmbed
         embed.setTitle('Help')
-        embed.setDescription('/poll - Create poll\n/ping - Show bot ping\n/bot - Show bot info\n')
-        embed.setColor('#AE0131')
+        embed.setDescription('**🔵 Moderation**\n`/purge`\n👍**Polls**\n`/poll`\n📕**Other**\n`/ping`,`/bot`')
+        embed.setColor('RANDOM')
         ctx.reply({ embeds: [embed]})
 	}
 });
