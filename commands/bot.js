@@ -9,7 +9,7 @@ new Command({
 	run: (ctx) => {
         const embed = new Discord.MessageEmbed
         embed.setTitle('About Bot')
-        embed.setDescription(`**🔄 Last Restart**: ${ms(ctx.client.uptime, { long: true})} ago\n**💨 Version**: v1.0.0\n**👨‍💻 Developer**: DaneeSkripter`)
+        embed.setDescription(`**🔄 Last Restart**: ${ms(ctx.client.uptime, { long: true})} ago\n**💨 Version**: v1.1.0\n**👨‍💻 Developer**: DaneeSkripter`)
         embed.setColor('RANDOM')
         ctx.reply({ embeds: [embed]})
 	}
