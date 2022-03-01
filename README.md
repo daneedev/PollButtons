@@ -1,6 +1,7 @@
 # PollButtons
 ## About
 - PollButtons is new Discord Bot based on JavaScript.
+- You can create cool polls with buttons
 ## Requirements
 - [NodeJS v16](https://nodejs.org/en/) *(after installation check it with `node -v`)*
 ## Installation
