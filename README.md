@@ -15,3 +15,10 @@
 - **X.X.1** - Bug Fix (Small change)
 - **X.1.0** - New commands (New features)
 - **1.0.0** - Big Update (System rebuilded)
+## Supported Versions
+- ✅ = These versions are recommended for use.
+- ❌ = These versions are not recommended for use.
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.1.x   | :white_check_mark: |
