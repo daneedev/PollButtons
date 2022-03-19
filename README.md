@@ -11,10 +11,6 @@
 ```DEV_SERVER=```
 3. In console run this command `npm install`
 4. Then run `node index.js` to start your bot
-## Versioning
-- **X.X.1** - Bug Fix (Small change)
-- **X.1.0** - New commands (New features)
-- **1.0.0** - Big Update (System rebuilded)
 ## Supported Versions
 - ✅ = These versions are recommended for use.
 - ❌ = These versions are not recommended for use.
