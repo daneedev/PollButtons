@@ -13,11 +13,18 @@ new Command({
         })
     ],
 	run: (ctx) => {
-        const number = ctx.arguments.getInteger("number")
-        ctx.channel.bulkDelete(number)
-        const embed = new Discord.MessageEmbed();
-        embed.setColor('RANDOM')
-        embed.setDescription(`I deleted **${number}** messages!`)
-        ctx.reply({ embeds: [embed], ephemeral: true})
+        if (!ctx.member.permissions.has('MANAGE_MESSAGES')) {
+            const error = new Discord.MessageEmbed()
+            .setTitle('No permissions! *[Manage Messages]*')
+            .setColor('RED')
+            ctx.reply({ embeds: [error], ephemeral: true})
+        } else {
+            const number = ctx.arguments.getInteger("number")
+            ctx.channel.bulkDelete(number)
+            const embed = new Discord.MessageEmbed();
+            embed.setColor('RANDOM')
+            embed.setDescription(`I deleted **${number}** messages!`)
+            ctx.reply({ embeds: [embed], ephemeral: true})
+        }
     }
 });
