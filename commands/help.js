@@ -8,7 +8,7 @@ new Command({
 	run: (ctx) => {
         const embed = new Discord.MessageEmbed
         embed.setTitle('Help')
-        embed.setDescription('**🔵 Moderation**\n`/purge`\n👍**Polls**\n`/poll`\n📕**Other**\n`/ping`,`/bot`,`/invite`')
+        embed.setDescription('**🔵 Moderation**\n`/purge`\n👍**Polls**\n`/poll`\n📕**Other**\n`/ping`,`/bot`,`/invite`, `/announcement`')
         embed.setColor('RANDOM')
         ctx.reply({ embeds: [embed]})
 	}

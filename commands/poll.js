@@ -106,7 +106,7 @@ new Command({
 
         collector.on('end', async (btn) => {
             const embed3 = new Discord.MessageEmbed()
-            .setTitle('This poll has ended!')
+            .setTitle(question)
             .setDescription(`**Results**:\n**${answra}**: ${votes_a} votes\n**${answrb}**: ${votes_b} votes`)
             const buttons2 = new MessageActionRow().addComponents([
                 new MessageButton()
