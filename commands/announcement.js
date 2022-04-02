@@ -20,6 +20,12 @@ new Command({
         })
     ],
 	run: (ctx) => {
+	if (!ctx.member.permissions.has('MANAGE_MESSAGES')) {
+	    const error = new Discord.MessageEmbed()
+            .setTitle('No permissions! *[Manage Messages]*')
+            .setColor('RED')
+            ctx.reply({ embeds: [error], ephemeral: true})
+	} else {
         let q = ctx.arguments.getString("title")
         let p = ctx.arguments.getString("description")
         let u = ctx.user
@@ -35,5 +41,6 @@ new Command({
         ctx.channel.send({ 
             embeds: [announcement]
         })
+	}
 	}
 });
