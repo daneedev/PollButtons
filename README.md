@@ -11,6 +11,9 @@
 ```DEV_SERVER=```
 3. In console run this command `npm install`
 4. Then run `node index.js` to start your bot
+# License
+- Don't change developer name in **/bot** command
+- MIT License (mention the author)
 ## Supported Versions
 - ✅ = These versions are recommended for use.
 - ❌ = These versions are not recommended for use.
