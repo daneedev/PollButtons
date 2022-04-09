@@ -1,4 +1,4 @@
-# PollButtons
+# PollButtons ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/daneeskripter/pollbuttons/CodeQL)
 ## About
 - PollButtons is new Discord Bot based on JavaScript.
 - You can create cool polls with buttons
